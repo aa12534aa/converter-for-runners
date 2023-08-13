@@ -24,7 +24,7 @@ boxesName.forEach(element => {
     Html += `
     <div class="box">
         <div class="boxTitle">${element.name}</div>
-        <div>
+        <div class="inputButton">
             <input class="inputConvert jsInputConverter${element.id}" type="text" placeholder="${element.placeholder}">
             <button class="buttonConvert jsButtonConverter" data-boxid="${element.id}">
                 Convert
