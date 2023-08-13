@@ -15,8 +15,9 @@ div {
 
 .mainContainer {
     margin-top: 80px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .box {
@@ -25,6 +26,8 @@ div {
     padding: 20px;
     height: 120px;
     box-shadow: 0px 0px 5px darkgreen;
+    width: 500px;
+    margin-top: 30px;
 }
 
 .boxTitle {
@@ -35,11 +38,19 @@ div {
     margin-bottom: 8px;
 }
 
+.inputButton {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .inputConvert {
     padding: 10px;
     background-color: darkgreen;
     border: lightblue solid 2px;
     color: lightblue;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
 }
 .inputConvert::placeholder {
     color: lightblue;
@@ -47,11 +58,12 @@ div {
 
 .buttonConvert {
     padding: 10px;
-    margin-left: -5px;
+    margin-left: -6px;
     background-color: darkgreen;
     color: lightblue;
     border: lightblue solid 2px;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .boxOutput {
@@ -59,4 +71,5 @@ div {
     margin-top: 10px;
     color: rgb(7, 57, 184);
     font-weight: bold;
+    font-size: 25px;
 }
